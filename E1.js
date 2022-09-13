@@ -32,7 +32,10 @@ const menu = pizzas.forEach((pizzas) =>{
 
 /*d) Todos los ingredientes de cada pizza (En cada iteración imprimir los ingredientes de la pizza actual). Ayuda: van a tener que realizar dos recorridos, ya que cada pizza del array de pizzas tiene un array de ingredientes.*/
 const ingredientes = pizzas.forEach((e) =>{
-    console.log(e.ingredients)
+    console.log(`Los ingredientes de la ${e.name} son:`);
+    e.ingredients.forEach((i) => {
+        console.log(i);
+    })
 })
 
 /*TODAS  las respuestas deben ser USER-FRIENDLY. 
